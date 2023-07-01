@@ -1,0 +1,50 @@
+#container {
+    position: relative;
+    width: 800;
+    height: 100%;
+    margin: 10 auto;
+    background-color: rgb(240, 237, 237);
+}
+
+#header {
+    background-image: url("./assets/background.avif");
+    height: 200;
+    position: relative;
+}
+
+#header img {
+    border-radius: 50%;
+    position: absolute;
+    height: 150;
+    bottom: 0;
+    left: 30;
+    transform: translateY(20%)
+}
+
+#body {
+    padding-top: 50;
+}
+
+#body .name {
+    font-size: 30;
+    font-weight: bold;
+    padding-left: 10;
+}
+
+
+#footer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(226, 224, 224);
+    padding: 15
+}
+
+#footer p {
+    margin: 0
+}
+
+#footer :first-child {
+    font-weight: bold;
+}
