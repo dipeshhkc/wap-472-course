@@ -47,6 +47,6 @@
     margin: 0
 }
 
-#footer :first-child p {
+#footer :first-child :first-child {
     font-weight: bold;
 }
