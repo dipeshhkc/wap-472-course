@@ -3,10 +3,17 @@
     margin: 0px;
 }
 
-dd {
+dl {
+    padding-left: 10pt;
+    line-height: 25pt;
+    font-weight: bold;
+}
+
+dl>dd {
+    font-weight: normal;
+    padding-left: 20px;
     line-height: 20px;
     font-size: 14px;
-
 }
 
 dt {
@@ -23,6 +30,12 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+.movie-title {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
 #movie-header {
     background: url(../assets/bannerbg.png);
     background-repeat: repeat-x;
@@ -36,10 +49,6 @@ body {
     height: 50px;
 }
 
-.movie-title {
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
 
 h1 {
     font-size: 32px;
@@ -137,16 +146,6 @@ h1 {
     margin: 5px 5px 0px 0px;
 }
 
-dl {
-    padding-left: 10pt;
-    line-height: 25pt;
-    font-weight: bold;
-}
-
-dl>dd {
-    font-weight: normal;
-    padding-left: 20px;
-}
 
 .page {
     text-align: center;
