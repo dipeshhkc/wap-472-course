@@ -1,0 +1,149 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+dd {
+    line-height: 20px;
+    font-size: 14px;
+
+}
+
+body {
+    background: url(../assets/background.png);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#movie-header {
+    background: url(../assets/bannerbg.png);
+    background-repeat: repeat-x;
+    height: 50px;
+}
+
+#movie-header>img {
+    display: block;
+    margin: auto;
+    width: 50%;
+    height: 50px;
+}
+
+.movie-title {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: bold;
+    font-family: Tahoma, Verdana, sans-serif;
+    text-align: center;
+    text-shadow: 3px 3px #999999;
+}
+
+.movie-container {
+    display: block;
+    margin: auto;
+    overflow: auto;
+}
+
+.wrapper {
+    width: 800px;
+    border: 4px solid gray;
+    border-radius: 20px;
+}
+
+.movie-section {
+    float: left;
+    width: 550px;
+}
+
+.movie-sidebar {
+    float: right;
+    width: 250px;
+    background-color: #a2b964;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.clear {
+    clear: both;
+    overflow: auto;
+}
+
+.rotten-bg {
+    background: url(../assets/rbg.png);
+    height: 83px;
+    font-size: 52px;
+    color: red;
+}
+
+#rottenbig-img {
+    height: 83px;
+}
+
+#rotten-pct {
+    position: relative;
+    top: -23px;
+    font-weight: bolder;
+}
+
+.movie-container>.movie-review p:nth-child(even) {
+    font-style: italic;
+    color: rgb(90, 89, 89);
+    font-size: small;
+}
+
+.movie-container>.movie-review {
+    padding: 20px 0px;
+}
+
+.movie-review-left {
+    margin-left: 10px;
+    float: left;
+    width: 47%;
+}
+
+.movie-review-right {
+    margin-right: 10px;
+    float: right;
+    width: 47%;
+}
+
+.movie-container>.movie-review>p {
+    padding: 8px;
+}
+
+.movie-container>.movie-review>p:nth-child(odd) {
+    border: 2px solid gray;
+    background-color: #e8dc9b;
+    border-radius: 10px;
+}
+
+.movie-container>.movie-review>p:nth-child(even) {
+    padding-top: 5px;
+    padding-bottom: 20pt;
+}
+
+.movie-container>.movie-review>p>img {
+    float: left;
+    margin: 5px 5px 0px 0px;
+}
+
+dl {
+    padding-left: 10pt;
+    line-height: 25pt;
+    font-weight: bold;
+}
+
+dl>dd {
+    font-weight: normal;
+    padding-left: 20px;
+}
+
+.page {
+    text-align: center;
+    background-color: #a2b964;
+}
+
+.footer {
+    text-align: right;
+}
