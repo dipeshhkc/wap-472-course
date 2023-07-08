@@ -7,7 +7,7 @@
 }
 
 #header {
-    background-image: url("./assets/background.avif");
+    background-image: url("../assets/background.avif");
     height: 200px;
     position: relative;
 }
