@@ -1,0 +1,58 @@
+#container {
+    padding: 20px;
+    position: relative;
+    width: 800px;
+    margin: 10px auto;
+    background-color: rgb(240, 237, 237);
+}
+
+
+.title {
+    font-weight: bold;
+    font-size: 30px;
+    color: rgb(72, 100, 224);
+    font-family: monospace;
+}
+
+.heading {
+    font-weight: bold;
+    font-size: 15px;
+    color: rgb(72, 100, 224);
+    font-family: monospace;
+
+}
+
+
+.asset-description {
+    padding: 10px;
+    color: rgb(105, 102, 102);
+}
+
+.asset-description p {
+    margin: 0;
+}
+
+.comment :first-child {
+    background-color: rgb(243, 226, 203);
+    padding: 5px;
+}
+
+.comment :nth-child(2) {
+    color: rgb(105, 102, 102);
+    text-align: right;
+}
+
+.copyright {
+    color: rgb(105, 102, 102);
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-align: right;
+}
+
+.copyright p {
+    margin: 0;
+}
+
+a {
+    display: block;
+}
