@@ -1,0 +1,63 @@
+#container {
+    padding: 20px;
+    position: relative;
+    width: 800px;
+    margin: 10px auto;
+    background-color: rgb(240, 237, 237);
+}
+
+
+.title {
+    font-weight: bold;
+    font-size: 30px;
+    color: rgb(72, 100, 224);
+    font-family: monospace;
+}
+
+.description {
+    color: rgb(109, 108, 108);
+    margin: 0;
+    padding-left: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: red;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.movies {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.me::first-letter {
+    color: rgb(72, 100, 224);
+    float: left;
+    font-size: 40px;
+    line-height: 0.85;
+}
+
+.heading {
+    font-weight: bold;
+    font-size: 15px;
+    color: rgb(72, 100, 224);
+    font-family: monospace;
+
+}
+
+.moods .images {
+    display: flex;
+    justify-content: center;
+}
+
+.moods img {
+    height: 250px;
+}
+
+.footer {
+    text-align: right;
+}

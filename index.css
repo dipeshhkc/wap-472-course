@@ -33,9 +33,10 @@
 
 
 #footer {
-    position: absolute;
-    left: 0;
-    right: 0;
+    position: fixed;
+    width: 800px;
+    box-sizing: border-box;
+    margin: auto;
     bottom: 0;
     background-color: rgb(226, 224, 224);
     padding: 15px;
