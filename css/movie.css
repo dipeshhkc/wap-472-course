@@ -3,22 +3,30 @@
     margin: 0px;
 }
 
-dl {
+.topic {
     padding-left: 10pt;
     line-height: 25pt;
     font-weight: bold;
+    font-size: 15px;
 }
 
-dl>dd {
+.topic p {
     font-weight: normal;
     padding-left: 20px;
     line-height: 20px;
     font-size: 14px;
+    overflow-wrap: break-word;
 }
 
-dt {
-    font-size: 15px;
+.topic ul {
+    font-weight: normal;
+    padding-left: 20px;
+    line-height: 20px;
+    font-size: 14px;
+    overflow-wrap: break-word;
 }
+
+
 
 q {
     font-weight: bold;
@@ -82,7 +90,7 @@ h1 {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.clear {
+.remove-float {
     clear: both;
     overflow: auto;
 }
