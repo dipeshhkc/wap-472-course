@@ -9,6 +9,15 @@ dd {
 
 }
 
+dt {
+    font-size: 15px;
+}
+
+q {
+    font-weight: bold;
+    font-size: small;
+}
+
 body {
     background: url(../assets/background.png);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -33,7 +42,7 @@ body {
 }
 
 h1 {
-    font-size: 24px;
+    font-size: 32px;
     font-weight: bold;
     font-family: Tahoma, Verdana, sans-serif;
     text-align: center;
@@ -141,6 +150,8 @@ dl>dd {
 
 .page {
     text-align: center;
+    padding: 8px;
+    font-family: monospace;
     background-color: #a2b964;
 }
 
