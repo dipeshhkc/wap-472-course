@@ -1,0 +1,4 @@
+## Insights
+
+- Review of old style technique to create a complex layouts using float and clear . However, Modern CSS techniques like flex and grid should be preferred.
+    - When we <b>float</b> any HTML element, it comes out of the regular DOM and floats above the DOM. So other subsequent element will wrap around it. Common issues we can observe here is elements overlapping with the floated element. This is where <b>clear</b> comes into picture. We can use the <b>clear</b> property on the subsequent HTML elements which will take it away from the previous floating element and no wrapping behaviour is seen. 
