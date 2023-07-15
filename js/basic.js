@@ -62,36 +62,66 @@ function jsFiddleFn(a) {
   console.log('return the product of all elements', d);
 }
 
+function areArraysEqual(arr1, arr2) {
+  return JSON.stringify(arr1) === JSON.stringify(arr2);
+}
+
 //TEST CASES
 
-console.log('Expected output of max(20,10) is 20');
-console.log('Actual Output ', max(20, 10));
+function myFunctionTest(a, fn) {
+  if ((Array.isArray(a) && areArraysEqual(a, fn())) || fn() === a)
+    return 'TEST SUCCEEDED';
+  else return 'TEST FAILED';
+}
 
-console.log('Expected output of maxOfThree(5,4,44) is 44');
-console.log('Actual Output ', maxOfThree(5,4,44));
+console.log(
+  'Expected output of max(20,10) is 20',
+  myFunctionTest(20, () => max(20, 10))
+);
 
-console.log('Expected output of maxOfThree(5,4,44) is 55');
-console.log('Actual Output ', maxOfThree(55,4,44));
+console.log(
+  'Expected output of maxOfThree(5,4,44) is 44',
+  myFunctionTest(44, () => maxOfThree(5, 4, 44))
+);
 
-console.log('Expected output of isVowel("a") is true');
-console.log('Actual Output ', isVowel("a") );
+console.log(
+  'Expected output of maxOfThree(55,4,44) is 55',
+  myFunctionTest(55, () => maxOfThree(55, 4, 44))
+);
 
-console.log('Expected output of isVowel("b") is false');
-console.log('Actual Output ', isVowel("b") );
+console.log(
+  'Expected output of isVowel("a") is true',
+  myFunctionTest(true, () => isVowel('a'))
+);
 
-console.log('Expected output of sum([5,3,2]) is 10');
-console.log('Actual Output ', sum([5,3,2]) );
+console.log(
+  'Expected output of isVowel("b") is true',
+  myFunctionTest(true, () => isVowel('b'))
+);
 
+console.log(
+  'Expected output of sum([5,3,2]) is 10',
+  myFunctionTest(10, () => sum([5, 3, 2]))
+);
 
-console.log('Expected output of multiply([5,3,2]) is 30');
-console.log('Actual Output ', multiply([5,3,2]) );
+console.log(
+  'Expected output of multiply([5,3,2]) is 30',
+  myFunctionTest(30, () => multiply([5, 3, 2]))
+);
 
-console.log('Expected output of reverse("cow") is woc');
-console.log('Actual Output ', reverse("cow"));
+console.log(
+  'Expected output of reverse("cow") is woc',
+  myFunctionTest('woc', () => reverse('cow'))
+);
 
-console.log('Expected output of findLongestWord("apple","banana","cat") is 6');
-console.log('Actual Output ', findLongestWord(["apple","banana","cat"]));
+console.log(
+  'Expected output of findLongestWord("apple","banana","cat") is 6',
+  myFunctionTest(6, () => findLongestWord(['apple', 'banana', 'cat']))
+);
 
-console.log('Expected output of filterLongWords(["apple","banana","cat"],4) is ["apple","banana"]');
-console.log('Actual Output ', filterLongWords(["apple","banana","cat"],4));
-
+console.log(
+  'Expected output of filterLongWords(["apple","banana","cat"],4) is ["apple","banana"]',
+  myFunctionTest(['apple', 'banana'], () =>
+    filterLongWords(['apple', 'banana', 'cat'], 4)
+  )
+);
