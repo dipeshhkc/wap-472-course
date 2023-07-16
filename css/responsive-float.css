@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    width: 100%;
+}
+
+.header {
+    background-color: rgb(92, 233, 233);
+    padding: 15px;
+    text-align: center;
+    font-weight: bold;
+    font-size: large;
+}
+
+.footer {
+    background-color: rgb(29, 150, 150);
+    padding: 15px;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    clear: both;
+}
+
+.menus {
+    background-color: rgb(29, 150, 150);
+    color: white;
+    font-weight: bold;
+    overflow: hidden;
+}
+
+.menus p {
+    padding: 10px;
+    border-right: 2px solid rgb(24, 92, 92);
+    float: left;
+}
+
+
+.main p {
+    padding: 10px;
+    box-sizing: border-box;
+    width: 50%;
+    float: left;
+}
+
+.main :first-child {
+    background-color: rgb(150, 146, 146);
+}
+
+.main :nth-child(2) {
+    background-color: rgb(187, 182, 182);
+}
+
+.main :nth-child(3) {
+    background-color: rgb(216, 214, 214);
+    width: 100%
+}
+
+/* Media Query for bigger screens */
+@media screen and (min-width: 600px) {
+    .main p {
+        width: calc(100% / 3);
+        /* Three columns side by side */
+    }
+
+    .main :nth-child(3) {
+        width: calc(100% / 3);
+    }
+
+}
