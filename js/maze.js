@@ -1,4 +1,6 @@
 $(document).ready(() => {
+  'use strict';
+
   let gameInProgress = false;
 
   const startGame = () => {
