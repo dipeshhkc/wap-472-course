@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/circle.css" />
+    <title>Clear Screen</title>
+    <script
+      src="https://code.jquery.com/jquery-2.2.4.min.js"
+      integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="container">
+      <div id="circles"></div>
+      <div id="controller">
+        <label for="circlecount">Number of circles</label>
+        <input type="number" name="circlecount" id="circlecount" value="3" />
+        <label for="width">Circle Width</label>
+        <input type="number" name="width" id="width" value="50" />
+        <label for="size">Growth Size</label>
+        <input type="number" name="size" id="size" value="10" />
+        <label for="interval">Interval</label>
+        <input type="number" name="interval" id="interval" value="250" />
+        <button id="start">Start</button>
+      </div>
+    </div>
+    <script>
+      $(document).ready(function () {
+        $('#start').click(function () {
+          const noOfCircle = Number($('#circlecount').val());
+          let circleWidth = Number($('#width').val());
+          const growthSize = Number($('#size').val());
+          const growthInterval = Number($('#interval').val());
+
+          for (let i = 0; i < noOfCircle; i++) {
+            //create a circle
+            const circle = $('<div>');
+            circle.addClass('circle');
+            circle.css({ width: circleWidth, height: circleWidth });
+            $('#circles').prepend(circle);
+
+            //remove when clicked
+            circle.click(function () {
+              $(this).remove();
+            });
+
+            //setup interval to increase the size of circle
+            const interval = setInterval(function () {
+              circleWidth += growthSize;
+              circle.css({ width: circleWidth, height: circleWidth });
+            }, growthInterval);
+
+            //clear after 1.5 sec [EXTRA]
+
+            // setTimeout(function () {
+            //   clearInterval(interval);
+            //   $(circle).remove();
+            // }, 2000);
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

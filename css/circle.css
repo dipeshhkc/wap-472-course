@@ -1,0 +1,31 @@
+#container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#circles {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.circle {
+    border-radius: 50%;
+    background-color: blueviolet;
+}
+
+#controller {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+#controller :last-child {
+    /* start with 2nd column and span 1 column width */
+    grid-column: 2 / span 1
+}
