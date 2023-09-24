@@ -1,4 +1,4 @@
-const BASE_URL = 'http://jsonplaceholder.typicode.com';
+const BASE_URL = 'https://jsonplaceholder.typicode.com';
 
 $(document).ready(function () {
   function getdetail(user) {
